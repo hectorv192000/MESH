@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.banner {
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.boton {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+.productos {
+margin: 50px auto;
+max-width: 1200px;
+}
+
+h3 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.producto {
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0px 0px 10px #ccc;
+padding: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.producto img {
+max-width: 100%;
+}
+
+.producto h4 {
+margin: 10px 0;
+font-size: 18px;
+}
+
+.producto p {
+font-size: 16px;
+color: #333;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+text-align: center;
+}
+
+css
+Copy code
+nav li {
+	margin: 10px 0;
+}
+
+.banner {
+	height: 300px;
+}
+
+.boton {
+	margin-top: 20px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 28px;
+}
+
+css
+Copy code
+nav li {
+	display: block;
+	margin: 10px 0;
+}
+
+.banner {
+	height: 200px;
+}
+
+.boton {
+	margin-top: 10px;
+}
+}
+
+/**********BOTÓN******************/
+.button {
+	position: relative;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ad2626;
+	background-color: #d84848;
+  }
+  
+  .button, .button_icon, .button_text {
+	transition: all 0.3s;
+  }
+  
+  .button .button__text {
+	transform: translateX(30px);
+	color: #fff;
+	font-weight: 600;
+  }
+  
+  .button .button__icon {
+	position: absolute;
+	transform: translateX(109px);
+	height: 100%;
+	width: 39px;
+	background-color: #1b488b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .button .svg {
+	width: 30px;
+	stroke: #fff;
+  }
+  
+  .button:hover {
+	background: #345397;
+  }
+  
+  .button:hover .button__text {
+	color: transparent;
+  }
+  
+  .button:hover .button__icon {
+	width: 148px;
+	transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+	background-color: #0619c5;
+  }
+  
+  .button:active {
+	border: 1px solid #1953aa;
+  }
+
+
+/*********TEXTO************/
+p
+{
+	color:#0f498b;
+}
+
+
+/*************IMAGEN*****************/
+.imgb
+{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 380px;
+}
+
+
+
+/* Fondo modal: negro con opacidad al 50% */
+.modal {
+	display: none; /* Por defecto, estará oculto */
+	position: fixed; /* Posición fija */
+	z-index: 1; /* Se situará por encima de otros elementos de la página*/
+	padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+	left: 0;
+	top: 0;
+	width: 100%; /* Ancho completo */
+	height: 100%; /* Algura completa */
+	overflow: auto; /* Se activará el scroll si es necesario */
+	background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  }
+  
+  /* Ventana o caja modal */
+  .contenido-modal {
+	position: relative; /* Relativo con respecto al contenedor -modal- */
+	background-color: white;
+	margin: auto; /* Centrada */
+	padding: 20px;
+	width: 60%;
+	-webkit-animation-name: animarsuperior;
+	-webkit-animation-duration: 0.5s;
+	animation-name: animarsuperior;
+	animation-duration: 0.5s
+  }
+  
+  /* Animación */
+  @-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+  }
+  
+  /* Botón cerrar */
+  .close {
+	color: black;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  #tabla1
+  {
+	width: 100%;
+  }
+
+
+#listado
+{
+width: 100%;
+height: auto;
+background-color: #ccc;
+}
+
+#tablaListado
+{
+	width: 80%;
+	height: auto;
+}

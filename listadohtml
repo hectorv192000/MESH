@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda de Artículos Deportivos Online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosgal.css">
+	<script src="/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logogen" src="image/isologo.png" alt="MESH">
+	</header>
+
+	<nav>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="galeria.html">Productos</a></li>
+	</nav>
+
+	<head>
+		<table id="tabla1">
+			<tr>
+			  <th><img src="./img/deportes.png" width="30px" height="30px"></th>
+			  <th><h1>LISTA DE PRODUCTOS</h1></th>
+			  <th><button type="button" class="button" id="abrirModal">
+				<span class="button__text">Agregar</span>
+				<span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+			  </button></th>
+			</tr>
+		</table>
+	</head>
+
+	<div id="ventanaModal" class="modal">
+		<div class="contenido-modal">
+			<span class="cerrar">&times;</span>
+			<p>Código del producto</p><input class="entrada1" name="codigo" value="codigo" type="text" size="40" placeholder="N° de código">
+			<p>Grupo de producto:</p><input class="entrada2" name="grupo" value="grupo" type="text"  size="40" placeholder="Grupo">
+			<p>Precio de venta:</p><input class="entrada5" name="precioVenta" value="venta" type="text"  size="40" placeholder="Precio de venta">
+			<p>Nombre:</p><input class="entrada6" type="text" name="nombre" value="nombre" size="40" placeholder="Nombre">
+			<p>N° de producto:</p><input class="entrada7" name="numeroProducto"  value="numeroProducto" type="number" size="40" placeholder="N° producto">
+			<p>Descripción:</p><input  class="entrada8" type="text" value="descripcion" name="descripcion" size="40" placeholder="Descripción">
+			<p>Precio de compra:</p><input class="entrada9" type="number"  value="precioDeCompra" name="precioCompra" size="40" placeholder="Precio de compra">
+			<p>Departamento</p><input class="entrada10" type="text" name="nombre" value="departamento" name="departamento" size="40" placeholder="Departamento">
+			<p>Imagen</p><input type="file" id="avatar" name="nombre" name="imagen" value="imagen" accept="image/png, image/jpeg" class="entrada11" size="40" placeholder="Inserta una imagen">
+
+
+			<button type="button" class="button" id="guardar"">
+				<span class="button__text">Guardar</span></button>
+			</div>
+		</div>
+
+
+		<div id="listado">
+		   <table id="tablaListado">
+		      <tr>
+				<th>Código del producto</th>
+				<th>Grupo de producto</th>
+				<th>Precio de venta</th>
+				<th>Nombre</th>
+				<th>N° de producto</th>
+				<th>Descripción</th>
+				<th>Precio de compra:</th>
+				<th>Departamento</th>
+				<th>Imagen</th>
+			  </tr>
+		   </table>
+	    </div>
+
+	<footer>
+		<p>Derechos reservados 2023 &copy; Tienda de Artículos Deportivos Online</p>
+	</footer>
+</body>
+</html>

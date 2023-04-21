@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda de Artículos Deportivos Online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosgal.css">
+	<link rel="stylesheet" type="text/css" href="css/producto.css">
+	<script src="/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logogen" src="image/isologo.png" alt="MESH">
+	</header>
+
+	<nav>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="galeria.html">Productos</a></li>
+	</nav>
+
+						<!-- Catalodo de productos -->
+						<section class="section">
+
+							
+			<div id="triangulo" class="galeria" >
+					
+				<img name="nor" class="img1" src="image/nike tran.png" width="400">
+				<img name="big" class="img2" src="image/nike tran.png" width="800">
+								
+								<!-- Animacion de zoom  -->
+								<figure id="xd" onmouseover="verMensaje('car')" onmouseout="ocultarMensaje('car')">	
+									<img src="image/carrito.png" alt="" id="carrito" class="carrito">
+									<figcaption id="car" class="car">
+										<section id="tenis" class="cubo">
+											<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="mini">
+											<label>Tenis Nike</label>	
+											<label>$700</label>
+											<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis'), restar(700)">
+										</section>
+							
+										<section id="tenis2" class="cubo">
+											<img src="https://cdn1.coppel.com/images/catalog/mkp/6285/3000/62851455-1.jpg" alt="" class="mini">
+											<label>360 Footwear</label>	
+											<label>$700</label>
+											<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis2'),restar(700)">
+										</section>
+							
+										<section id="tenis3" class="cubo">
+											<img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1026735-0001V1.jpg" alt="" class="mini">
+											<label>Tenis Adidas</label>	
+											<label>$600</label>
+											<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis3'),restar(600)">
+										</section>
+							
+										<section id="tenis4" class="cubo">
+											<img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1022213-0101V1.jpg" alt="" class="mini">
+											<label>Tenis Skechers</label>	
+											<label>$200</label>
+											<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis4'),restar(200)">
+										</section>
+							
+										
+										<p class="sub">SUBTOTAL</p>
+										<div class="total">
+											<p id="precio">$</p>
+										</div>
+										
+										<button class="detalle">Detalle Carrito</button>
+									</figcaption>
+								</figure>
+				
+				
+									<div id="textor">
+										
+										<h1 id="">Zapato Nike verde</h1>
+										<h5>zapatillas nike zapatillas de tenis, nike, blanco, zapato al aire libre.
+											<br>
+											
+											<br>
+											Comodidad para cualquier lugar, colores para que tus amigos te envidien.
+											Mantenerse activo es lo mejor.
+				
+										</h5>
+										
+										<p>No. de Articulos:
+											<input id="n-conceptos" type="number" min="0" max="20" value="0" >
+										</p>
+
+										<p>PRECIO = <input type="text" value="300" disabled></p>
+										
+										<button class="boton" onclick="agregar('textor'), verMensaje('car'), calcularcuadro(700)">Añadir al carrito</button>
+										<br>
+										
+				
+									</div>                
+							</div>
+							<br>
+						</section>
+				
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+									<span class="close">&times;</span>
+									<p>Contenido de la ventana modal</p>
+				
+									<label>
+										<img id="imgCagaste" src="image/x.png" onclick="borrarConcepto(${num})"/>
+										</label>
+										<label>
+											<img id="qpd"src="Imagenes/nike tran.png" alt="">
+										</label>
+										<label><p>Cantidad</p>
+											<input type="number" name="cantidad" id="cantidad${num}" min="1" value="1" onblur="calcularImporte(${num})"/>
+										</label>
+										<label >
+											<p>Descripción</p>
+											Tenis profesional de retiros tecnologicos
+										</label>
+										<label >
+											<p>Valor Unitario</p>
+											<input type="number" name="valorUnitario" id="valorUnitario${num}"min="0" value="0.00" step="0.01" onblur="calcularImporte(${num})"/>
+										</label>
+										<label >
+											<p>Importe:</p>
+											<input type="number" name="importe" id="importe${num}" value="0.00" step="0.01" disabled/>
+										</label>
+							</div>
+						</div>
+						  
+						<script src="js/producto.js"></script>
+
+	<footer>
+		<p>Derechos reservados 2023 &copy; Tienda de Artículos Deportivos Online</p>
+	</footer>
+</body>
+</html>

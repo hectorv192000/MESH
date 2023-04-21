@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {	
+
+    background-color: #fff;
+	padding: 20px;
+	text-align: center;
+    background-color: #fff;
+	padding: 20px;
+	text-align: center;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin: 0;
+    }
+
+section{
+    height: auto;
+    min-height: 500px;
+    background-color: rgb(181, 61, 61);
+    font-size: 20px;
+    /*color: white;*/
+    position: relative ;
+    text-align: center;
+    }
+
+
+#generar{
+    background-color: aqua;
+    border-radius: 20%;
+    width: 80px;
+    padding: absolute;    
+}
+
+#agregar{
+    background-color: rgb(34, 231, 50);
+    border-radius: 20%;
+    width: 125px;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.agregar{
+    display:none;
+    margin-left: auto;
+}
+.mostrar-agregar{
+    display:block;
+}
+
+fieldset{
+    width: 55% ;
+    margin: 3px auto;
+}
+
+table, th, td{
+    text-align: right;
+    border-bottom: 1px solid #204956;
+    border-collapse: collapse;
+    text-align: right;
+    padding-top: 10px;
+}
+
+label{                      /*parte de los conceptos*/
+    display: inline-block;
+    text-align: left;
+}
+
+.datosComprador{
+    display: none;
+}
+
+input{
+    width: auto;
+    top: auto;
+}
+
+input[type="number"]{
+    text-align: right;
+}
+
+#tablar{
+    width:300px;    
+    
+}
+td{
+    width:150px;    
+}
+
+div{
+    margin-top: 10px;       /*margen superior*/
+    margin-bottom: 10px;    /*margen inferior*/
+}
+
+#titulo-conceptos{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.titulo-conceptos{
+    display: block;
+}
+
+.quitar-titulo-conceptos{
+    display: none;
+}
+
+#qpd{
+    height: auto;
+    width: 100px;
+}
+
+#icono{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+#logogen{
+	height: 100px;
+	width: 350px;
+}
+
+
+
+
+.previsualizar{
+    width: 200px;
+    margin: 10px auto;
+    background-color: #f6fa0c;
+    color: #791515;
+
+}
+
+
+/*Menu */
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	
+	display: inline-block;
+	justify-content: space-between;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+/*-------*/

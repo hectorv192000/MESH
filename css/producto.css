@@ -1,0 +1,241 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: image();
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	align-items: center;
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	color: rgb(0, 0, 0);
+	-webkit-text-stroke: 1px rgb(0, 200, 255);
+  	
+	height: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+/*Menu */
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+/*-------*/
+
+h3 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+/*-----------------Productos-------------*/
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+
+
+.banner {
+	height: 300px;
+}
+
+.boton {
+	margin-top: 20px;
+}
+
+
+@media (max-width: 480px) {
+h1 {
+font-size: 28px;
+}
+
+css
+Copy code
+nav li {
+	display: block;
+	margin: 10px 0;
+}
+
+.banner {
+	height: 200px;
+}
+
+.boton {
+	margin-top: 10px;
+}
+}
+#triangulo{
+	margin-top: 20px;
+}
+
+/*PRODUCTO-----------------------------*/
+
+#mercancia1{
+	display: inline-block;
+}
+
+#galeria{
+	width: 5%;
+	padding-left: 10px;
+	top: 5%;	
+	display: inline-block;
+	margin: auto;
+	
+	
+}
+
+#personaje {
+	height: 200px;
+	
+}
+
+
+
+.galeria #mostreo img{
+	width: 110px;
+}
+
+
+
+#productores{
+	display: inline-block;
+}
+
+
+div{    
+    display: inline-block;
+
+}
+
+.galeria{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 10px #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	
+}
+
+section{
+	text-align: center;
+	min-height: 500px;
+	
+}
+
+
+/*zoom de la imagen*/
+.img1 {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	border:0px; 
+	overflow:hidden; 
+}
+.img2 {
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	border:0px; 
+	overflow:hidden; 
+	display:none; 
+	clip: rect(0px, 100px, 100px, 0px);
+}
+
+
+
+#imgBorrar{
+		float: left;
+		width: auto;
+		height: auto;
+		margin-right: auto;
+		margin-left: 10px;
+	}
+
+#imgCagaste{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+#qpd{
+    height: auto;
+    width: 100px;
+}
+label{                      /*parte de los conceptos*/
+    display: inline-block;
+    text-align: left;
+}
+/* ----------------------MODALES -----------*/
+	/* Estilos para la capa de fondo */
+
+/* Estilo de ventana modal */
+.modal {
+  display: none; /* Oculta la ventana modal por defecto */
+  position: fixed; /* Fija la posición de la ventana */
+  z-index: 1; /* Establece la profundidad de la ventana */
+  left: 0;
+  top: 0;
+  width: 100%; /* Establece el ancho a la pantalla completa */
+  height: 100%; /* Establece la altura a la pantalla completa */
+  overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente para enfatizar el modal */
+}
+
+/* Estilo de contenido del modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centra vertical y horizontalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del contenido del modal */
+}
+
+/* Estilo de cierre */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+

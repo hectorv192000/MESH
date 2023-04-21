@@ -1,0 +1,171 @@
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+#logogen{
+	height: 100px;
+	width: 350px;
+}
+
+.banner {
+	background-image: url(/image/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.boton {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+#infoban{
+	background-color: #333333c0;
+}
+
+.productos {
+margin: 50px auto;
+max-width: 1200px;
+}
+
+h3 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.producto {
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0px 0px 10px #ccc;
+padding: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.producto img {
+max-width: 100%;
+}
+.img1 {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	border:0px; 
+	overflow:hidden; 
+}
+.img2 {
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	border:0px; 
+	overflow:hidden; 
+	display:none; 
+	clip: rect(0px, 100px, 100px, 0px);
+}
+
+.producto h4 {
+margin: 10px 0;
+font-size: 18px;
+}
+
+.producto p {
+font-size: 16px;
+color: #333;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+text-align: center;
+}
+
+css
+Copy code
+nav li {
+	margin: 10px 0;
+}
+
+.banner {
+	height: 300px;
+}
+
+.boton {
+	margin-top: 20px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 28px;
+}
+
+css
+Copy code
+nav li {
+	display: block;
+	margin: 10px 0;
+}
+
+.banner {
+	height: 200px;
+}
+
+.boton {
+	margin-top: 10px;
+}
+}

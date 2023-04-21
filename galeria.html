@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda de Artículos Deportivos Online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/estilosgal.css">
+	<script src="/js/script.js"></script>
+	<script src="/js/scriptfact.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logogen" src="image/isologo.png" alt="MESH">
+	</header>
+
+  <figure id="xd" onmouseover="verMensaje('car')" onmouseout="ocultarMensaje('car')">	
+		<img src="image/carrito.png" alt="" id="carrito" class="carrito">
+		<figcaption id="car" class="car">
+			<section id="tenis" class="cubo">
+				<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="mini">
+				<label>Tenis Nike</label>	
+				<label>$700</label>
+				<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis'), restar(700)">
+			</section>
+
+			<section id="tenis2" class="cubo">
+				<img src="https://cdn1.coppel.com/images/catalog/mkp/6285/3000/62851455-1.jpg" alt="" class="mini">
+				<label>360 Footwear</label>	
+				<label>$700</label>
+				<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis2'),restar(700)">
+			</section>
+
+			<section id="tenis3" class="cubo">
+				<img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1026735-0001V1.jpg" alt="" class="mini">
+				<label>Tenis Adidas</label>	
+				<label>$600</label>
+				<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis3'),restar(600)">
+			</section>
+
+			<section id="tenis4" class="cubo">
+				<img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1022213-0101V1.jpg" alt="" class="mini">
+				<label>Tenis Skechers</label>	
+				<label>$200</label>
+				<img src="image/x.png" alt="" class="borrar" onclick="cerrar('tenis4'),restar(200)">
+			</section>
+
+			
+			<p class="sub">SUBTOTAL</p>
+			<div class="total">
+				<p id="precio">$</p>
+			</div>
+			
+			<a href="producto.html">	
+				<button class="detalle">Detalle Carrito</button>
+			</a>
+		</figcaption>
+	</figure>
+
+	<nav>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="galeria.html">Productos</a></li>
+
+	</nav>
+
+
+		<h1 class="secciones">Tenis</h1>
+
+	<main>
+
+		
+	<div class="container-items">
+		<div class="cuadro">
+			<figure>
+				<img
+					src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>Tenis Nike</h2>
+				<p class="price">$700</p>
+				<button class="boton" onclick="agregar('tenis'), verMensaje('car'), calcularcuadro(700)">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="cuadro">
+			<figure>
+				<img
+					src="https://cdn1.coppel.com/images/catalog/mkp/6285/3000/62851455-1.jpg"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>360 Footwear </h2>
+				<p class="price">$700</p>
+				<button class="boton" onclick="agregar('tenis2'), verMensaje('car'), calcularcuadro(700)">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="cuadro">
+			<figure>
+				<img
+					src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1026735-0001V1.jpg"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>Tenis Adidas</h2>
+				<p class="price">$600</p>
+				<button class="boton" onclick="agregar('tenis3'), verMensaje('car'), calcularcuadro(600)">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="cuadro">
+			<figure>
+				<img
+					src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1022213-0101V1.jpg"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>Tenis Skechers</h2>
+				<p class="price">$200</p>
+				<button class="boton" onclick="agregar('tenis4'), verMensaje('car'),  calcularcuadro(200)">Añadir al carrito</button>
+			</div>
+		</div>
+
+
+		<h1 class="secciones">Ropa</h1>
+		
+
+		<div class="container-items">
+			<div class="cuadro">
+				<figure>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI0NExD8m3QpN-KiGg9Sy976QfoibaVmooMA_moNNpKP_4OxLz_94EK6oEMkE3r3qZkIA"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto Nike Gris</h2>
+					<p class="price">$300</p>
+					<button class="boton">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="cuadro">
+				<figure>
+					<img
+						src="https://cf.shopee.com.mx/file/40627f13848bda50fae8a2bc9829b2b7"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto Nike Rojo</h2>
+					<p class="price">$300</p>
+					<button class="boton">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="cuadro">
+				<figure>
+					<img
+						src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/1f3990a9a7304910905fac610128d531_9366/conjunto-essentials-3-franjas.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto Adidas Negro</h2>
+					<p class="price">$300</p>
+					<button class="boton">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="cuadro">
+				<figure>
+					<img
+						src="https://m.media-amazon.com/images/I/71X6JcXAHHL._AC_UY1000_.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto Adidas Azul</h2>
+					<p class="price">$300</p>
+					<button class="boton">Añadir al carrito</button>
+				</div>
+			</div>
+	</div>
+		
+	</main>
+
+	
+	<footer>
+		<p>Derechos reservados 2023 &copy; Tienda de Artículos Deportivos Online</p>
+	</footer>
+  </body>
+</html>

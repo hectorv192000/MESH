@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda de Artículos Deportivos Online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosgal.css">
+	<link rel="stylesheet" type="text/css" href="css/carrito.css">
+	<script src="/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logogen" src="image/isologo.png" alt="MESH">
+	</header>
+
+	<nav>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="galeria.html">Productos</a></li>
+	</nav>
+
+	<section>
+		<fieldset id="compras">
+			<legend>Productos</legend>
+
+			<div id="productos">
+					<label>
+					<img id="icono" src="image/x.png" onclick="borrarConcepto(${num})"/>
+					</label>
+					<label>
+						<img id="qpd"src="Imagenes/nike tran.png" alt="">
+					</label>
+					<label><p>Cantidad</p>
+						<input type="number" name="cantidad" id="cantidad${num}" min="1" value="1" onblur="calcularImporte(${num})"/>
+					</label>
+					<label >
+						<p>Descripción</p>
+						<input type="text" name="descripcion" value="wtf" disabled/>
+					</label>
+					<label >
+						<p>Valor Unitario</p>
+						<input type="number" name="valorUnitario" id="valorUnitario${num}" value="300" step="0.01" onblur="calcularImporte(${num})" disabled/>
+					</label>
+					
+			</div>
+
+			<button onclick="borrarProductos()">Eliminar Todo</button>
+
+		</fieldset>
+
+		<fieldset id="tablar">
+			<table>
+				<tr>
+					<th>Subtotal:</th>
+					<td id="subTotal">0.00</td>
+				</tr>
+				<tr>
+					<th>IVA:</th>
+					<td id="iva">0.00</td>
+				</tr>
+				<tr>
+					<th>TOTAL:</th>
+					<td id="total">0.00</td>
+				</tr>
+			</table>
+
+			
+	 
+		</fieldset>
+		<div>
+			<button id="Datos">Continuar al Págo <br> <img id="icono" src="image/carrito.png" alt=""></button>
+		</div>
+
+		<br>
+
+<fieldset id="datosComprador" class="datosComprador">
+		
+<legend>DATOS DE COMPRADOR</legend>
+		<div id="datosComprador">
+			DATOS PERSONALES
+			<br>
+			<br>
+			<label >
+				<p>Nombre Completo</p>
+				<input type="text" name="descripcion" placeholder="Ejem: Juan Perez Cachofa"/>
+			</label>
+			<label >
+				<p>Telefono</p>
+				<input type="number" name="telefono" placeholder="477-000-0000"/>
+			</label>
+			<label >
+				<p>Correo Electronico</p>
+				<input type="text" name="E-mail" placeholder="Email"/>
+			</label>
+			<label >
+				<p>Dirección</p>
+				<input type="text" name="Dirección" placeholder="Calle 123, Ciudad, Estado"/>
+			</label>
+		</div>
+
+		<a href="../Tienda de deportes/Factura.html">Facturar</a>
+		
+</fieldset>
+	<br>     
+
+	</section>
+	<script src="js/script.js"></script>
+
+	<footer>
+		<p>Derechos reservados 2023 &copy; Tienda de Artículos Deportivos Online</p>
+	</footer>
+</body>
+</html>
